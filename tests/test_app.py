@@ -29,7 +29,7 @@ class TestApp(unittest.TestCase):
         self.assertEqual(divide(-6, 2), -3)
 
     def test_divide_by_zero_raises_error(self) -> None:
-        with self.assertRaises(ValueError):
+        with self.assertRaises(ZeroDivisionError):
             divide(5, 0)
 
 
