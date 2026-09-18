@@ -6,6 +6,11 @@ def build_status_message() -> str:
     return "AI dev agent repository is initialized."
 
 
+def add(a: float, b: float) -> float:
+    """Return the sum of two numbers."""
+    return a + b
+
+
 def main() -> None:
     """Run the demo app."""
     print(build_status_message())

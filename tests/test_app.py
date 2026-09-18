@@ -1,6 +1,6 @@
 import unittest
 
-from ai_dev_agent_demo.app import build_status_message
+from ai_dev_agent_demo.app import add, build_status_message
 
 
 class TestApp(unittest.TestCase):
@@ -9,6 +9,15 @@ class TestApp(unittest.TestCase):
             build_status_message(),
             "AI dev agent repository is initialized.",
         )
+
+    def test_add_two_positive_integers(self) -> None:
+        self.assertEqual(add(2, 3), 5)
+
+    def test_add_positive_and_negative_integer(self) -> None:
+        self.assertEqual(add(2, -3), -1)
+
+    def test_add_two_decimals(self) -> None:
+        self.assertEqual(add(2.5, 1.5), 4.0)
 
 
 if __name__ == "__main__":
