@@ -15,7 +15,7 @@ def divide(a: float, b: float) -> float:
     """Return the division of two numbers."""
     if b == 0:
         raise ZeroDivisionError("Cannot divide by zero.")
-    return a * b
+    return a / b
 
 
 def main() -> None:
