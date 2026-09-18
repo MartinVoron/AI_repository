@@ -32,6 +32,9 @@ class TestApp(unittest.TestCase):
         with self.assertRaises(ZeroDivisionError):
             divide(5, 0)
 
+    def test_divide_intentional_failure():
+        assert divide(10, 2) == 999
+
 
 if __name__ == "__main__":
     unittest.main()
