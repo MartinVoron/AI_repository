@@ -34,7 +34,7 @@ Le but de ce projet est de préparer une architecture simple et extensible qui p
         └── tests.yml
 ```
 
-- `src/ai_dev_agent_demo/app.py` : mini application de démonstration exécutable.
+- `src/ai_dev_agent_demo/app.py` : mini application de démonstration exécutable (inclut `add(a, b)` pour additionner deux nombres).
 - `tests/test_app.py` : test automatisé minimal.
 - `.github/workflows/tests.yml` : exécution automatique des tests sur Pull Request.
 - `.github/copilot-instructions.md` : consignes générales pour Copilot sur ce repository.
